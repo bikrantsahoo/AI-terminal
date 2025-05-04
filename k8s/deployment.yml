@@ -1,4 +1,3 @@
-// filepath: k8s/deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -18,5 +17,7 @@ spec:
       containers:
       - name: ai-terminal
         image: dockerbabuli/ai-terminal:ed0a7024cb3217ef56dd4d391072f389db5d4986
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
+     
