@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: ai-terminal
-        image: dockerbabuli/ai-terminal:latest # Replace with your DockerHub image
+        image: dockerbabuli/ai-terminal:ed0a7024cb3217ef56dd4d391072f389db5d4986
         ports:
         - containerPort: 80
