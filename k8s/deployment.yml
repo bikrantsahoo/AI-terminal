@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: ai-terminal
-        image: dockerbabuli/ai-terminal:ed0a7024cb3217ef56dd4d391072f389db5d4986
+        image: dockerbabuli/ai-terminal:arm64
         imagePullPolicy: Always
         ports:
         - containerPort: 80
