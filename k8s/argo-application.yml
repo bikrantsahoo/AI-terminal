@@ -1,0 +1,19 @@
+// filepath: k8s/argo-application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ai-terminal
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/your-username/your-repo.git' # Replace with your repo
+    targetRevision: main
+    path: k8s
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

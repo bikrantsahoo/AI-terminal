@@ -1,0 +1,15 @@
+// filepath: k8s/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: ai-terminal-service
+  labels:
+    app: ai-terminal
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 31003
+  selector:
+    app: ai-terminal
