@@ -1,4 +1,3 @@
-// filepath: helm/react-app/values-live.yaml
 appName: ai-terminal-staging
 namespace: live
 replicaCount: 3
