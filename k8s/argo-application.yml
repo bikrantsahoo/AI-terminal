@@ -1,4 +1,3 @@
-// filepath: k8s/argo-application.yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -7,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/your-username/your-repo.git' # Replace with your repo
+    repoURL: 'https://github.com/bikrantsahoo/AI-terminal.git'
     targetRevision: main
     path: k8s
   destination:
